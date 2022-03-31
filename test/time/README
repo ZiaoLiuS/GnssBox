@@ -1,0 +1,21 @@
+在命令行输入time_convert，如果可执行程序的路径配置成功的话，就会输出帮助文档，
+在命令行输入下面命令，结果分别为:
+ > time_convert --mjd "59592" --toFormat "%Y"
+2022
+ > time_convert --jd "2459592.5" --toCalendar civil --sys GPS --toSys BDT 
+CivilTime: 2022 1 12 23:59:46.000000  (BDT)
+ > time_convert --civil "2022 1 1 12:00:00" --toFormat "%Q"
+59580.500000
+ > time_convert --YDS "2022 1 43200.13456" --sys GPS --toSys BDT 
+CivilTime: 2022 1 1 11:59:46.134560  (BDT)
+weekSecond: 2190 561586.134560  (BDT)
+YDSTime: 2022 1 43186.134560  (BDT)
+Modified Julian Date: 59580.499840  (BDT)
+> time_convert --ws "1356 14" --sys GPS --toSys BDT 
+CivilTime: 2006 1 1 0:0:0.000000  (BDT)
+weekSecond: 1356 0.000000  (BDT)
+YDSTime: 2006 1 0.000000  (BDT)
+Modified Julian Date: 53736.000000  (BDT)
+
+注释：符号“>” 代表在命令行输入的命令，下面为结果，请自己写代码，比对上述结果。
+
